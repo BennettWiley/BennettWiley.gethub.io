@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Homepage</title>
+  <link rel="icon" href="https://uncbears.com/images/logos/site/site.png">
+  <body style="background-color: lightblue;"></body>
+  <style>
+    h1
+    {
+      color: gold;
+      font-size: 40pt;
+    }
+    h2
+    {
+      color: gold;
+      font-size: 32pt;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to my site!</h1>
+  <a href="#directory"><img src="images/UNClogo.png" alt="UNC bear logo"></a>
+  <p>This is my site for <strong>BACS200</strong>. This is a run on
+    <br>
+    sentence.</p>
+  <p><em>Hope you enjoy it.</em></p>
+  <a href="#entities">Link to entities table</a>
+  
+  <section>
+    <h2>Campus Pic</h2>
+    <img src="http://www.unco.edu/canvas/images/homepage/canvas-banner-1.jpg" alt="Aerial view of UNCO campus in Greely">
+  </section>
+  
+  <section>
+    <h2>Campus Link</h2>
+    <h3><a href="https://www.unco.edu">UNC Homepage</a></h3>
+  </section>
+  <br>
+  <br>
+  <br>
+  <section>
+    <h2>My Pages</h2>
+    <ul>
+      <li><a href="https://bennettwiley.github.io/amuse.html">Amuse Page</a></li>
+      <li><a href = "https://bennettwiley.github.io/inspire.html">Inspire Page</a></li>
+      <li><a href="https://bacs200steven-sanchez.github.io/inspire.html">Inspire Page</a></li>
+      <li><a href="https://bennettwiley.github.io/educate.html">Educate Page</a></li>
+      <li><a href="https://bennettwiley.github.io/profile.html">Profile Page</a></li>
+      <li><a href = "https://bennettwiley.github.io/template.html">Test Page</a></li>
+      <li><a href = "https://bennettwiley.github.io/template.html">Template Page</a></li>
+      
+    </ul>
+  </section>
+  <br>
+  <br>
+  <br>
+  <section id="directory">
+    <h2>Website Link</h2>
+    <ul>
+      <li>
+        <a href="https://bennettwiley.github.io/">Bennett Wiley</a>
+      </li>
+    </ul>
+</body>
+</html>
