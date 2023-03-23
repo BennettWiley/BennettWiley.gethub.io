@@ -1,23 +1,33 @@
-<form action="https://www.google.com/search">
-  <label for="search">Search Query:</label>
-  <input type="text" name="q" id="search">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Google Super Search</title>
+        <link rel-"stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <h1>Google Super Search</h1>
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+          <feildset id="toplevelset">
+            <div>
+              <label for="searchbox">Search String</label>
+              <input type="text" name="q" id="searchbox">
+            </div>
+            <div>
+            label for="site">Select a Site</label>
+            <select name= "as_sitesearch">
+              <option value ="unco.edu">University of Northern Colorado</option>
+              <option value ="instructure.com">Canvas</option>
+              <option value ="W3schools.com">W3Schools</option>
+            </select>
+            </div>
+          <div>
+            <input type = "checkbox" name="newwindow" value="1" id="checkwindow">
+            <label for = "checkwindow">Open Links In New Window</label>
+          </div>
+          </feildset>
+      </feildset>
+  <input type="submit">Search</button>
+    </body>
+</html>
 
-  <label for="param">Search Parameter:</label>
-  <select name="as_q">
-    <option value="">Any</option>
-    <option value="site:">Site</option>
-    <option value="intext:">Intext</option>
-    <option value="filetype:">Filetype</option>
-    <option value="inurl:">Inurl</option>
-    <option value="related:">Related</option>
-  </select>
-
-  <fieldset>
-    <legend>Options:</legend>
-    <label><input type="checkbox" name="as_epq" value="1">Exact Match</label>
-    <label><input type="checkbox" name="as_eq" value="-">Exclude Words</label>
-    <label><input type="checkbox" name="safe" value="active">Safe Search</label>
-  </fieldset>
-
-  <button type="submit">Search</button>
-</form>
