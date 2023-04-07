@@ -2,50 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Wile E. Coyote - Resume</title>
+  <title>Wile E. Coyote's Resume</title>
   <style>
+    /* CSS rules */
     body {
       font-family: Arial, sans-serif;
-    }
-    h1 {
-      font-size: 36px;
-      margin-top: 0;
-    }
-    h2 {
-      font-size: 24px;
-      margin-top: 20px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
       margin: 0;
     }
-    li {
-      margin-top: 10px;
+    
+    header {
+      background-color: #f9a825;
+      color: white;
+      padding: 20px;
+    }
+    
+    nav {
+      background-color: #81c784;
+      padding: 10px;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      margin-right: 20px;
+    }
+    
+    h2 {
+      margin-top: 40px;
+    }
+    
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body>
-  <h1>Wile E. Coyote</h1>
-  <h2>Professional Experience</h2>
-  <ul>
-    <li><strong>Acme Corporation</strong> - Research and Development</li>
-    <li>Developed and tested various contraptions to capture the elusive Road Runner</li>
-    <li>Designed and built rocket-powered roller skates</li>
-    <li>Created and utilized a variety of explosives in pursuit of the Road Runner</li>
-  </ul>
-  <h2>Education</h2>
-  <ul>
-    <li><strong>Desert Institute of Technology</strong> - Acme Rocketry and Explosives</li>
-    <li>Bachelor of Science in Acme Rocket Science and Explosive Engineering</li>
-    <li>Graduated with Honors</li>
-  </ul>
-  <h2>Skills</h2>
-  <ul>
-    <li>Expert in rocket science and explosive engineering</li>
-    <li>Skilled in designing and building complex machinery</li>
-    <li>Excellent problem-solving abilities</li>
-    <li>Exceptional endurance and stamina</li>
-  </ul>
-</body>
-</html>
+  <header>
+    <h1>Wile E. Coyote</h1>
+    <h3>Genius at Acme Corporation</h3>
+    <p>1234 Desert Road, AC 12345 | 555-555-5555 | wile.e.coyote@acme.com</p>
+  </header>
+  
+  <nav>
+    <a href="#contact">Contact Info</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+  </nav>
+  
+  <main>
+    <section id="contact">
+      <h2>Contact Information</h2>
+      <ul>
+        <li>Address: 1234 Desert Road, AC 12345</li>
+        <li>Phone: 555-555-5555</li>
+        <li>Email: wile.e.coyote@acme.com</li>
+      </ul>
+    </section>
+    
+    <section id="education">
+      <h2>Education</h2>
+      <table>
+        <tr>
+          <th>Year</th>
+          <th>Degree</th>
+          <th>Institution</th>
+        </tr>
+        <tr>
+          <td>1995-1999</td>
+          <td>BS in Engineering</td>
+          <td>Acme University</td>
+        </tr>
+        <tr>
+          <td>1999-2001</td>
+          <td>MS in Engineering</td>
+          <td>Acme University</td>
+        </tr>
+      </table>
+    </section>
+    
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li>ACME Corporation, Genius (2001-present)</li>
+        <li>Develop and test new products to catch Road Runner</li>
+        <li>Design and build complex contraptions to catch Road Runner</li>
+        <li>Supervise teams of other geniuses and train apprentices</li>
+
