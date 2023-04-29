@@ -7,11 +7,44 @@
 			background-color: white;
 		}
 
-		h1 {
-			color: red;
-			border: 2px solid red;
+		header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: red;
+			color: white;
 			padding: 10px;
-			text-align: center;
+			border: 2px solid red;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: 36px;
+		}
+
+		nav {
+			display: flex;
+			align-items: center;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+
+		li {
+			margin-left: 20px;
+		}
+
+		a {
+			color: white;
+			text-decoration: none;
+		}
+
+		a:hover {
+			border-bottom: 2px solid white;
 		}
 
 		p {
@@ -23,32 +56,34 @@
 			border-radius: 5px;
 		}
 
-		ul {
-			color: black;
-			margin: 20px;
-			padding: 10px;
-			border: 1px solid red;
-			border-radius: 5px;
+		/* Add a red border to all elements */
+		* {
+		    border: 1px solid red;
 		}
 
-		li {
-			margin-bottom: 10px;
-		}
-
-		a {
-			color: red;
-			text-decoration: none;
-			border-bottom: 2px solid red;
+		/* Style the footer */
+		footer {
+		    background-color: red;
+		    color: white;
+		    padding: 10px;
+		    text-align: center;
 		}
 	</style>
 </head>
 <body>
-	<h1>Aunt Alice Kitchen</h1>
+	<header>
+		<h1>Aunt Alice Kitchen</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
 	<p>Welcome to Aunt Alice Kitchen, where you'll find the best home-cooked meals made with love and care. Our recipes have been passed down for generations, and we're proud to share them with you.</p>
-	<ul>
-		<li><a href="#">Menu</a></li>
-		<li><a href="#">About Us</a></li>
-		<li><a href="#">Contact Us</a></li>
-	</ul>
+	<footer>
+		<p>&copy; 2023 Aunt Alice Kitchen. All rights reserved.</p>
+	</footer>
 </body>
 </html>
