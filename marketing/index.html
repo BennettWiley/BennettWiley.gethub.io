@@ -1,140 +1,89 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Aunt Alice Kitchen</title>
-	<style>
-		body {
-			background-color: white;
-		}
+	<head>
+		<meta charset="utf-8">
+		<title>Aunt Alice Kitchen</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				background-color: white;
+			}
+			header {
+				background-color: red;
+				color: white;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 10px;
+			}
+			header h1 {
+				font-size: 36px;
+				margin: 0;
+			}
+			header nav {
+				display: flex;
+			}
+			header nav a {
+				color: white;
+				text-decoration: none;
+				margin: 0 10px;
+			}
+			main {
+				padding: 20px;
+				text-align: center;
+			}
+			footer {
+				background-color: red;
+				color: white;
+				padding: 10px;
+			}
+			section {
+				text-align: left;
+				font-size: 16px;
+				padding: 10px;
+			}
+			h2 {
+				font-size: 24px;
+				margin-top: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Aunt Alice Kitchen</h1>
+			<nav>
+				<a href="#">Home</a>
+				<a href="#">Menu</a>
+				<a href="#">About Us</a>
+				<a href="#">Contact Us</a>
+			</nav>
+		</header>
+		<main>
+			<h2>Breakfast Favorites</h2>
+			<p>
+				<span style="font-size: 16px;">One "Egg with Meat"</span><br>
+				$10.50 • 1 egg, your choice of bacon, ham or sausage, hashbrowns, and toast. *<br>
+				<span style="font-size: 12px;">No meat option:<br>
+				1 egg, hashbrowns, and toast.</span>
+			</p>
+		</main>
+		<section>
+			<h2>VISIT US</h2>
+			<p style="font-size: 14px; text-align: center;">
+				Aunt Alice's Kitchen<br>
+				1805 Main St<br>
+				Longmont, CO 80501<br><br>
+				(303) 651-0495<br><br>
+				<span style="font-size: 16px;">Hours</span><br>
+				Monday - Saturday: 5:30 am - 8:00 pm<br>
+				Sunday: 5:30 am - 7:00 pm
+			</p>
 
-		header {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			background-color: red;
-			color: white;
-			padding: 10px;
-			border: 2px solid red;
-		}
-
-		h1 {
-			margin: 0;
-			font-size: 36px;
-		}
-
-		nav {
-			display: flex;
-			align-items: center;
-		}
-
-		ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			display: flex;
-		}
-
-		li {
-			margin-left: 20px;
-		}
-
-		a {
-			color: white;
-			text-decoration: none;
-		}
-
-		a:hover {
-			border-bottom: 2px solid white;
-		}
-
-		p {
-			color: black;
-			font-size: 18px;
-			margin: 20px;
-			padding: 10px;
-			border: 1px solid red;
-			border-radius: 5px;
-			text-align: center;
-		}
-
-		/* Add a red border to all elements */
-		* {
-			border: 1px solid red;
-		}
-
-		/* Remove border from some elements */
-		header, nav, ul, li, a, p {
-			border: none;
-		}
-
-		/* Set color and background for body and header */
-		body {
-			background-color: white;
-		}
-
-		header {
-			background-color: red;
-			color: white;
-		}
-
-		/* Set styles for navigation links */
-		nav {
-			display: flex;
-			align-items: center;
-		}
-
-		ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			display: flex;
-		}
-
-		li {
-			margin-left: 20px;
-		}
-
-		a {
-			color: white;
-			text-decoration: none;
-		}
-
-		a:hover {
-			border-bottom: 2px solid white;
-		}
-	</style>
-</head>
-<body>
-	<header>
-		<h1>Aunt Alice Kitchen</h1>
-		<nav>
-			<a href="#">Home</a>
-			<ul>
-				<li><a href="#">Menu</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Contact Us</a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<main>
-		<p>Welcome to Aunt Alice Kitchen, where we serve delicious home-style cooking just like your Aunt Alice used to make. Come and enjoy our breakfast, lunch, and dinner menus, featuring all your favorite dishes.</p>
-	</main>
-
-	<footer>
-		<p>
-			VISIT US<br>
-			Aunt Alice's Kitchen<br>
-			1805 Main St<br>
-			Longmont, CO 80501<br>
-			<br>
-			(303) 651-0495
-		</p>
-		<p style="font-size: 20px;">
-			Hours<br>
-			Monday - Saturday: 5:30 am - 8:00 pm<br>
-			Sunday: 5:30 am - 7:00 pm
-		</p>
-	</footer>
-</body>
-</html
+            
+		</section>
+		<footer>
+			<p>&copy; 2023 Aunt Alice Kitchen</p>
+		</footer>
+	</body>
+</html>
