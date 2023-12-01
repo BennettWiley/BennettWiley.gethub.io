@@ -1,0 +1,153 @@
+Flower File
+using System;
+
+// Derived class representing a flower
+public class Flower : Plant, IWaterable
+{
+    public Flower(string name) : base(name) { }
+
+    public override void Grow()
+    {
+        Console.WriteLine($"{Name} is blooming.");
+    }
+
+    public void Water()
+    {
+        Console.WriteLine($"{Name} is being watered.");
+    }
+}
+
+Gardner File
+using System;
+using System.Collections.Generic;
+
+// Class representing a gardener
+public class Gardener
+{
+    public string Name { get; set; }
+
+    public Gardener(string name)
+    {
+        Name = name;
+    }
+
+    public void TakeCareOfPlant(IWaterable plant, Tool tool)
+    {
+        Console.WriteLine($"{Name} is taking care of {plant.GetType().Name} using {tool.GetType().Name}.");
+        tool.Use();
+        plant.Water();
+    }
+}
+
+IWaterable File
+// Interface for entities that can be watered
+public interface IWaterable
+{
+    void Water();
+}
+
+Plants File
+using System;
+
+// Base class for all plants
+public class Plant
+{
+    public string Name { get; set; }
+
+    public Plant(string name)
+    {
+        Name = name;
+    }
+
+    public virtual void Grow()
+    {
+        Console.WriteLine($"{Name} is growing.");
+    }
+}
+
+Program File
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        // Create instances of plants, tools, and gardener
+        Flower rose = new Flower("Rose");
+        Vegetable carrot = new Vegetable("Carrot");
+        WateringCan wateringCan = new WateringCan("Watering Can");
+        Gardener gardener = new Gardener("John");
+
+        // Demonstrate polymorphism
+        List<IWaterable> waterablePlants = new List<IWaterable> { rose, carrot };
+        foreach (var plant in waterablePlants)
+        {
+            gardener.TakeCareOfPlant(plant, wateringCan);
+            Console.WriteLine();
+        }
+    }
+}
+
+Tool File
+using System;
+
+// Base class for all tools
+public class Tool
+{
+    public string Name { get; set; }
+
+    public Tool(string name)
+    {
+        Name = name;
+    }
+
+    public virtual void Use()
+    {
+        Console.WriteLine($"{Name} is being used.");
+    }
+}
+
+Vegetable File
+using System;
+
+// Derived class representing a vegetable
+public class Vegetable : Plant, IWaterable
+{
+    public Vegetable(string name) : base(name) { }
+
+    public void Harvest()
+    {
+        Console.WriteLine($"{Name} is ready for harvest.");
+    }
+
+    public void Water()
+    {
+        Console.WriteLine($"{Name} is being watered.");
+    }
+}
+
+WateringCan File
+using System;
+
+// Derived class representing a watering can
+public class WateringCan : Tool
+{
+    public WateringCan(string name) : base(name) { }
+
+    public override void Use()
+    {
+        Console.WriteLine($"{Name} is watering the plants.");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
